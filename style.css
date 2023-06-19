@@ -21,3 +21,34 @@ article .background::before{
 article header img{
     width: 200px;
 }
+
+article main form{
+    background-color: rgba(0,0,0,.75);
+    border-radius: 4px;
+    width: 80% !important;
+}
+
+article main form h1{
+    color: #FFFFFF;
+}
+
+article main form .form-floating .inputEmail{
+    height: 2.50em !important;
+    background-color: #333333 !important;
+    border: 0;
+    color: #8c8c8c;
+}
+
+article main form .form-floating label{
+    color: #8c8c8c;
+}
+
+article main form .form-floating input:focus{
+    box-shadow: none;
+    color: #8c8c8c;
+}
+
+article main form .form-floating label{
+    font-weight: 500;
+    font-size: 16px;
+}

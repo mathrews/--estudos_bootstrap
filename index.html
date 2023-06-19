@@ -20,14 +20,30 @@
 <body>
     <article>
         <div class="background position-absolute z-n1 w-100 h-100">
-            <img class="img-fluid d-block w-100 h-100" src="bckg.jpg" alt="background">
+            <img class="d-block w-100 h-100" src="bckg.jpg" alt="background">
         </div>
-        <header class="px-5">
-            <a href="https://www.netflix.com/br/">
-                <img class="img-fluid" src="Netflix_Logo_RGB.png" alt="Logo">
-            </a>
+        <header class="container row px-5 pt-1">
+            <section class="container-fluid">
+                <a href="https://www.netflix.com/br/">
+                    <img class="img-fluid" src="Netflix_Logo_RGB.png" alt="Logo">
+                </a>
+            </section>
         </header>
-        <main></main>
+        <main class="container d-flex justify-content-center">
+            <section class="container row justify-content-center">
+                <section class="container-fluid col-md-6 col-sm-6 pt-2 position-relative d-flex justify-content-center">
+                    <form class="container-fluid row position-relative">
+                        <section class="col-md-12 col-sm-12 pt-5 px-5 flex-1">
+                            <h1 class="fs-2 mb-4 row">Entrar</h1>
+                            <div class="form-floating mb-3 row">
+                                <input type="email" class="form-control inputEmail" aria-describedby="emailHelpId" id="floatingInput" placeholder="name@example.com">
+                                <label class="ps-3 flex-wrap" for="floatingInput">Email ou número de telefone</label>
+                            </div>
+                        </section>
+                    </form>
+                </section>
+            </section>
+        </main>
         <footer></footer>
     </article>
 
