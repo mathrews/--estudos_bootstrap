@@ -15,9 +15,9 @@
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
         crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="animacao-intro.css" />
-    <script src="./app.js" defer></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animacao-intro.css" />
+    <script src="js/app.js" defer></script>
 </head>
 <body>
     <div class="background-animation">
@@ -35,12 +35,12 @@
 
     <article>
         <div class="background position-absolute z-n1 w-100 h-100">
-            <img class="d-block w-100 h-100" src="bckg.jpg" alt="background">
+            <img class="d-block w-100 h-100" src="assets/bckg.jpg" alt="background">
         </div>
         <header class="container row px-5 pt-1">
             <section class="container-fluid">
                 <a href="https://www.netflix.com/br/">
-                    <img class="img-fluid" src="Netflix_Logo_RGB.png" alt="Logo">
+                    <img class="img-fluid" src="assets/Netflix_Logo_RGB.png" alt="Logo">
                 </a>
             </section>
         </header>
@@ -54,7 +54,11 @@
 
                         <section class="col-md-12 col-sm-12 pt-5 px-5 flex-1">
 
-                            <h1 class="fs-2 mb-4 col-md-12 col-sm-12">Entrar</h1>
+                            <h1 class="fs-2 mb-4 col-md-12 col-sm-12">
+                                Entrar
+                                <span class="typer" id="main" data-words="com estilo,com Entretenimento,na Netflix." data-colors="#FFFFFF" data-delay="50" data-deleteDelay="1500"></span>
+                                <span class="cursor" data-owner="main"></span>
+                            </h1>
 
                             <div class="form-floating mb-3 col-md-12 col-sm-12">
                                 <input type="email" class="form-control inputEmail rounded" aria-describedby="emailHelpId" id="floatingInput" placeholder="name@example.com">
