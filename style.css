@@ -32,14 +32,11 @@ article main form h1{
     color: #FFFFFF;
 }
 
-article main form .form-floating .inputEmail{
-    height: 2.50em !important;
+article main form .form-floating .form-control,
+article main form .form-floating .form-control{
+    height: 1em !important;
     background-color: #333333 !important;
     border: 0;
-    color: #8c8c8c;
-}
-
-article main form .form-floating label{
     color: #8c8c8c;
 }
 
@@ -49,6 +46,44 @@ article main form .form-floating input:focus{
 }
 
 article main form .form-floating label{
-    font-weight: 500;
+    color: #8c8c8c;
+    font-weight: 400;
     font-size: 16px;
 }
+
+article main form section.pt-5{
+    padding-top: 4em !important;
+}
+
+article main form section .btn{
+    background-color: #e50914;
+    border: 0;
+    font-weight: bold;
+    height: 3em;
+    transition-duration: 300ms !important;
+}
+
+article main form section .btn:hover{
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+article main form section .form-check div:first-child label{
+    color: #8c8c8c;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+article main form section .form-check div:nth-child(2) a{
+    font-weight: 500;
+    font-size: 13px;
+    color: #8c8c8c;
+    text-decoration: none;
+}
+
+.rounded{
+    border-radius: 4px !important;
+}
+
+
+
