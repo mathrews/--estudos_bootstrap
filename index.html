@@ -15,12 +15,12 @@
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
         crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/animacao-intro.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <script src="js/app.js" defer></script>
 </head>
 <body>
-    <div class="background-animation">
+    <!-- <div class="background-animation">
         <div class="logo">
             <div class="brush1">
                 <div class="color"></div>
@@ -31,16 +31,13 @@
             </div>
             <div class="brush3"></div>
         </div>  
-    </div>
+    </div> -->
 
     <article>
-        <div class="background position-absolute z-n1 w-100 h-100">
-            <img class="d-block w-100 h-100" src="assets/bckg.jpg" alt="background">
-        </div>
         <header class="container row px-5 pt-1">
             <section class="container-fluid">
                 <a href="https://www.netflix.com/br/">
-                    <img class="img-fluid" src="assets/Netflix_Logo_RGB.png" alt="Logo">
+                    <img class="img-fluid" src="img/Netflix_Logo_RGB.png" alt="Logo">
                 </a>
             </section>
         </header>
@@ -48,26 +45,26 @@
 
             <section class="container row justify-content-center">
 
-                <section class="container-fluid col-md-10 col-sm-10 col-lg-8 pt-2 position-relative d-flex justify-content-center">
+                <section class="container-fluid col-md-10 col-sm-12 col-lg-8 col-xl-6 pt-2 position-relative d-flex justify-content-center">
 
                     <form class="container-fluid row position-relative">
 
-                        <section class="col-md-12 col-sm-12 pt-5 px-5 flex-1">
+                        <section class="col-md-12 col-sm-12 pt-5 px-5">
 
                             <h1 class="fs-2 mb-4 col-md-12 col-sm-12">
                                 Entrar
-                                <span class="typer" id="main" data-words="com estilo,com Entretenimento,na Netflix." data-colors="#FFFFFF" data-delay="50" data-deleteDelay="1500"></span>
+                                <span class="typer" id="main" data-words="com estilo,com qualidade,na Netflix." data-colors="#FFFFFF" data-delay="50" data-deleteDelay="1500"></span>
                                 <span class="cursor" data-owner="main"></span>
                             </h1>
 
                             <div class="form-floating mb-3 col-md-12 col-sm-12">
                                 <input type="email" class="form-control inputEmail rounded" aria-describedby="emailHelpId" id="floatingInput" placeholder="name@example.com">
-                                <label class="ps-4 flex-wrap" for="floatingInput">Email ou número de telefone</label>
+                                <label class="ps-3 flex-wrap" for="floatingInput">Email ou número de telefone</label>
                             </div>
 
                             <div class="form-floating mb-3">
                                 <input type="password" class="form-control inputPass rounded" id="floatingPassword" placeholder="Password">
-                                <label for="floatingPassword" class="form-label ps-4">Senha</label>
+                                <label for="floatingPassword" class="form-label ps-3">Senha</label>
                             </div>
 
                             <div class="pt-4 d-flex justify-content-center">
@@ -75,20 +72,35 @@
                             </div>
 
                             <div class="form-check d-flex justify-content-between pt-3">
-                                <div class="d-flex align-items-center">
-                                    <input class="form-check-input rounded" type="checkbox" value="" id="" checked>
-                                    <label class="form-check-label ps-1 mt-1" for="">
+                                <div class="custom-checkbox d-flex align-items-center">
+                                    <input class="form-check-input rounded" type="checkbox" id="inputCheckbox" checked>
+                                    <label class="form-check-label ps-1 mt-1" for="inputCheckbox">
                                     Lembre-se de mim
                                     </label>
                                 </div>
                                 <div>
-                                    <a href="https://www.netflix.com/br/LoginHelp" class="mt-1">Precisa de ajuda?</a>
+                                    <a href="https://www.netflix.com/br/LoginHelp" target="_blank" class="mt-1">Precisa de ajuda?</a>
                                 </div>
                             </div>
                             
-                            
                         </section>
 
+                        <section class="col-md-12 col-sm-12 pt-5 px-5" id="saiba-mais">
+                            <div class="assign d-flex align-items-center">
+                                <h5>Novo por aqui?</h5>
+                                <a target="_blank" href="https://www.netflix.com/br/" class="mb-2 px-1">Assine Agora</a>
+                            </div>
+                            <div class="learnMore">
+                                <p><small>Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô. <a href="#!">Saiba mais.</a></small></p>
+                            </div>
+                            <div class="termos">
+                                <p>
+                                    <small>
+                                        As informações recolhidas pelo Google reCAPTCHA estão sujeitas à <a href="https://policies.google.com/privacy" target="_blank">Política de Privacidade</a> e <a href="https://policies.google.com/terms" target="_blank">Termos de Uso</a>, e são usadas para oferecer, manter e melhorar o serviço reCAPTCHA e por questões de segurança (não são usadas para exibir anúncios personalizados pelo Google).
+                                    </small>
+                                </p>
+                            </div>
+                        </section>
                     </form>
 
                 </section>
