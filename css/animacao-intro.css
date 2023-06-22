@@ -12,7 +12,8 @@
     align-items: center;
     background: black;
     overflow: hidden;
-    animation: aparecimento 12s ease-in-out forwards;
+    position: relative;
+    animation: aparecimento 6s ease-in-out forwards;
 }
 
 .background-animation .logo{
@@ -94,12 +95,18 @@
 @keyframes aparecimento {
     0% {
         visibility: visible;
+        position: fixed;
+        z-index: 2;
     }
-    50%{
+    50% {
         visibility: visible;
+        position: fixed;
+        z-index: 2;
     }
-    99%{
+    99% {
         visibility: visible;
+        position: fixed;
+        z-index: 2;
     }
     100% {
         visibility: hidden;
