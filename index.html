@@ -15,12 +15,14 @@
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
         crossorigin="anonymous"
     />
+    <link rel="shortcut icon" href="img/nficon2016.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/animacao-intro.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/app.js" defer></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
-    <div class="background-animation">
+    <!-- <div class="background-animation">
         <div class="logo">
             <div class="brush1">
                 <div class="color"></div>
@@ -31,7 +33,7 @@
             </div>
             <div class="brush3"></div>
         </div>  
-    </div>
+    </div> -->
 
     <article>
         <header class="container row px-5 pt-1">
@@ -58,12 +60,12 @@
                             </h1>
 
                             <div class="form-floating mb-3 col-md-12 col-sm-12">
-                                <input type="email" class="form-control inputEmail rounded" aria-describedby="emailHelpId" id="floatingInput" placeholder="name@example.com">
+                                <input type="email" class="form-control inputEmail rounded" aria-describedby="emailHelpId" id="floatingInput" placeholder="name@example.com" required>
                                 <label class="ps-3 position-absolute z-0" for="floatingInput">Email ou número de telefone</label>
                             </div>
 
                             <div class="form-floating mb-3">
-                                <input type="password" class="form-control inputPass rounded" id="floatingPassword" placeholder="Password">
+                                <input type="password" class="form-control inputPass rounded" id="floatingPassword" placeholder="Password" required>
                                 <label for="floatingPassword" class="form-label ps-3 position-absolute z-0">Senha</label>
                             </div>
 
@@ -73,7 +75,7 @@
 
                             <div class="form-check d-flex justify-content-between pt-3">
                                 <div class="custom-checkbox d-flex align-items-center">
-                                    <input class="form-check-input rounded" type="checkbox" id="inputCheckbox" checked>
+                                    <input class="check-box form-check-input rounded" type="checkbox" id="inputCheckbox" checked>
                                     <label class="form-check-label ps-1 mt-1" for="inputCheckbox">
                                     Lembre-se de mim
                                     </label>
@@ -91,13 +93,11 @@
                                 <a target="_blank" href="https://www.netflix.com/br/" class="mb-2 px-1">Assine Agora</a>
                             </div>
                             <div class="learnMore">
-                                <p><small>Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô. <a href="#!">Saiba mais.</a></small></p>
+                                <p>Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô. <a href="#" id="ancora" onclick="mostrar()">Saiba mais.</a></p>
                             </div>
-                            <div class="termos">
+                            <div class="termos" id="termos">
                                 <p>
-                                    <small>
-                                        As informações recolhidas pelo Google reCAPTCHA estão sujeitas à <a href="https://policies.google.com/privacy" target="_blank">Política de Privacidade</a> e <a href="https://policies.google.com/terms" target="_blank">Termos de Uso</a>, e são usadas para oferecer, manter e melhorar o serviço reCAPTCHA e por questões de segurança (não são usadas para exibir anúncios personalizados pelo Google).
-                                    </small>
+                                    As informações recolhidas pelo Google reCAPTCHA estão sujeitas à <a href="https://policies.google.com/privacy" target="_blank">Política de Privacidade</a> e <a href="https://policies.google.com/terms" target="_blank">Termos de Uso</a>, e são usadas para oferecer, manter e melhorar o serviço reCAPTCHA e por questões de segurança (não são usadas para exibir anúncios personalizados pelo Google).
                                 </p>
                             </div>
                         </section>

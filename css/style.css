@@ -97,6 +97,13 @@ article main form section .form-check div:nth-child(2) a {
     text-decoration: none;
 }
 
+article main form section .form-check .custom-checkbox .check-box{
+    border-radius: 2px !important;
+    background-color: #737373;
+    border: 0px;
+    box-shadow: none;
+}
+
 .rounded {
     border-radius: 4px !important;
 }
@@ -111,6 +118,21 @@ article main form section:nth-child(2) .assign a {
     color: #FFFFFF;
     text-decoration: none;
     font-size: 18px;
+}
+
+article main form #saiba-mais .learnMore > p,
+article main form #saiba-mais .termos > p{
+    font-size: 14px !important;
+    color: #7a7878;
+}
+
+article main form #saiba-mais .termos{
+    visibility: hidden;
+    padding-bottom: 1.25em;
+}
+
+article main form #saiba-mais .termos.active{
+    visibility: visible;
 }
 
 
