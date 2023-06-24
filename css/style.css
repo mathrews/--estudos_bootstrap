@@ -52,6 +52,10 @@ article header img {
     width: 200px;
 }
 
+article main.mb-5{
+    margin-bottom: 5em !important;
+}
+
 article main form {
     background-color: rgba(0,0,0,.75);
     border-radius: 4px;
@@ -136,19 +140,88 @@ article main form section:nth-child(2) .assign a {
 }
 
 article main form #saiba-mais .learnMore > p,
-article main form #saiba-mais .termos > p{
+article main form #saiba-mais .termos > p {
     font-size: 14px !important;
     color: #7a7878;
 }
 
-article main form #saiba-mais .termos{
+article main form #saiba-mais .termos {
     visibility: hidden;
     padding-bottom: 1.25em;
 }
 
-article main form #saiba-mais .termos.active{
+article main form #saiba-mais .termos.active {
     visibility: visible;
 }
 
+article footer {
+    background-color: rgba(0,0,0,.75);
+}
+
+article footer.px-5 {
+    padding-left: 10% !important;
+    padding-top: 1% !important;
+    padding-bottom: 2% !important;
+}
+
+article footer section:first-child {
+    align-items: baseline;
+    gap: 6px;
+    margin-top: 0.75em;
+    margin-bottom: 0.5em;
+}
+
+article footer section:first-child h5 {
+    color: #737373;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+article footer section:first-child a {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+article footer a {
+    color: #737373;
+}
+
+article footer a:hover {
+    text-decoration: underline !important;
+}
+
+article footer section:nth-child(2) {
+    margin-bottom: 1.15em;
+}
+
+article footer section:nth-child(2) ul {
+    display: flex !important;
+}
+
+article footer section:nth-child(2) ul li {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    line-height: 2.25em;
+}
+
+article footer section:nth-child(3) {
+    margin-bottom: 1.25em;
+}
+
+article footer section:nth-child(3) .dropdown button{
+    background-color: rgba(0,0,0,.75);
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #73737370;
+    color: #8c8c8c;
+    height: 3em;
+}
+
+article footer section:nth-child(3) .dropdown button i{
+    color: #8c8c8c;
+}
 
 
