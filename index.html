@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="css/animacao-intro.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/app.js" defer></script>
-    <script src="js/script.js"></script>
 </head>
 <body>
     <!-- <div class="background-animation">
@@ -108,7 +107,41 @@
             </section>
 
         </main>
-        <footer></footer>
+        <footer class="px-5">
+            <section class="d-flex">
+                <h5>Dúvidas? Ligue</h5>
+                <a href="tel:0800 591 8942">0800 591 8942</a>
+            </section>
+            <section>
+                <ul>
+                    <li>
+                        <a href="https://help.netflix.com/support/412">Perguntas frequentes</a>
+                        <a href="https://www.netflix.com/br/login?nextpage=https%3A%2F%2Fwww.netflix.com%2Fbrowse#">Preferências de cookies</a>
+                    </li>
+                    <li>
+                        <a href="https://help.netflix.com/">Central de Ajuda</a>
+                        <a href="https://help.netflix.com/legal/corpinfo">Informações corporativas</a>
+                    </li>
+                    <li>
+                        <a href="https://help.netflix.com/legal/termsofuse">Termos de Uso</a>
+                    </li>
+                    <li>
+                        <a href="https://help.netflix.com/legal/privacy">Privacidade</a>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" id="languageDropdown" aria-expanded="false">
+                        <i class="fa-solid fa-globe" style="color: #ffffff;"></i> <span>Idiomas</span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                        <li><a class="dropdown-item" href="#" onclick="changeLanguage(lang)" data-lang="en">Inglês</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="changeLanguage(lang)" data-lang="pt">Português</a></li>
+                    </ul>
+                </div>
+            </section>
+        </footer>
     </article>
 
     <script
@@ -122,6 +155,8 @@
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"
     ></script>
+    <!-- <script src="js/configLangs.js"></script> -->
+    <script src="js/script.js"></script>
 
 </body>
 </html>

@@ -8,6 +8,21 @@
     box-sizing: border-box;
 }
 
+body::-webkit-scrollbar {
+    width: 10px;
+    position: absolute;
+} 
+
+body::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(#333333, #737373, #e50914 );
+    border-radius: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #737373;
+    overflow: hidden;
+}
+
 body {
     background-image: url(../img/bckg.jpg);
     background-attachment: fixed;
