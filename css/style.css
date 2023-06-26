@@ -148,10 +148,12 @@ article main form #saiba-mais .termos > p {
 article main form #saiba-mais .termos {
     visibility: hidden;
     padding-bottom: 1.25em;
+    opacity: 0;
 }
 
 article main form #saiba-mais .termos.active {
     visibility: visible;
+    opacity: 1;
 }
 
 article footer {
