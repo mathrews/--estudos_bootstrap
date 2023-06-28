@@ -135,7 +135,7 @@ article main form section .form-check .custom-checkbox .check-box + div{
     border: 3px solid #000000;
     border-left: none;
     border-top: none;
-    top: 50%;
+    top: 1.26em;
     left: 0.28em;
     visibility: hidden;
     transform: rotate(45deg) scale(0);
