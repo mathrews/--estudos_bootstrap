@@ -91,16 +91,17 @@ article main form section.pt-5 {
 }
 
 article main form section .btn {
-    background-color: #e50914;
-    border: 0;
+    background-color: #e50914 !important;
+    border: 0 !important;
     font-weight: bold;
     height: 3em;
     transition-duration: 300ms !important;
+    box-shadow: none !important;
 }
 
 article main form section .btn:hover {
-    background-color: #FFFFFF;
-    color: #000000;
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
 }
 
 article main form section .form-check div:first-child label {
