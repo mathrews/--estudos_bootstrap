@@ -117,8 +117,8 @@ article main form section .form-check div:nth-child(2) a {
 }
 
 article main form section .form-check .custom-checkbox .check-box{
-    width: 1em;
-    height: 1em;
+    width: 1.05em;
+    height: 1.05em;
     border-radius: 2px !important;
     background-color: #737373;
     border: 0px;
@@ -137,11 +137,19 @@ article main form section .form-check .custom-checkbox .check-box + div{
     border-top: none;
     top: 50%;
     left: 0.25em;
-    transform: rotate(45deg);
+    visibility: hidden;
+    transform: rotate(45deg) scale(0);
+    pointer-events: none;
+}
+
+article main form section .form-check .custom-checkbox .check-box:checked + div{
+    transition: 200ms ease;
+    visibility: visible;
+    transform: rotate(45deg) scale(1);
 }
 
 article main form section .form-check .custom-checkbox .check-box:hover{
-    background-color: rgba(115, 115, 115, 0.7);
+    background-color: rgba(115, 115, 115, 0.8);
 }
 
 .rounded {
