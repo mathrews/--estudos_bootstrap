@@ -86,6 +86,14 @@ article main form .form-floating label {
     margin-top: 1px;
 }
 
+article main form .form-floating .invEmail,
+article main form .form-floating .invPassword{
+    color: #e87c03;
+    padding-top: 4px;
+    font-size: 0.85em;
+    display: none;
+}
+
 article main form section.pt-5 {
     padding-top: 4em !important;
 }

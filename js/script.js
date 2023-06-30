@@ -37,4 +37,39 @@ btn.addEventListener('click', evento => {
         },
         body: JSON.stringify(data)
     }).then(res => res.json()).then(data => console.log(data))
-})
+});
+
+
+
+btn.addEventListener("click", (validar) => {
+    
+    validar.preventDefault(); //valida primeiro, depois envia
+
+    const EMAIL = document.querySelector("#floatingInput");
+    const SENHA = document.querySelector("#floatingPassword");
+
+    let valueEmail = EMAIL.value;
+    let valueSenha = SENHA.value;
+
+    const invalidEmail = document.querySelector(".invEmail");
+    const invalidSenha = document.querySelector(".invPassword");
+
+    if (!valueEmail.includes("@gmail.com") || valueEmail.length === 0){
+        EMAIL.style.borderBottom = '2px solid #e87c03';
+        invalidEmail.style.display = 'flex';
+    } else {
+        EMAIL.style.borderBottom = 'none';
+        invalidEmail.style.display = 'none';
+    }
+
+    if (valueSenha.trim().length >= 4 && valueSenha.trim().length <= 60 && !valueSenha.includes(" ")){
+        SENHA.style.borderBottom = 'none';
+        invalidSenha.style.display = 'none';
+    } else {
+        SENHA.style.borderBottom = '2px solid #e87c03';
+        invalidSenha.style.display = 'flex';
+    }
+
+    btn.submit();
+
+});
