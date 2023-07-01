@@ -1,4 +1,3 @@
-
 ancora.onclick = function(){
     let saibaMais = document.querySelector("#termos");
     saibaMais.classList.add('active');
