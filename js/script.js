@@ -69,6 +69,4 @@ btn.addEventListener("click", (validar) => {
         invalidSenha.style.display = 'flex';
     }
 
-    btn.submit();
-
 });
