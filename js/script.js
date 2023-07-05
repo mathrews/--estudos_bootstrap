@@ -6,20 +6,6 @@ ancora.onclick = function(){
     saibaMais.style.transitionTimingFunction = 'ease';
 }
 
-// const ENVIAR = document.querySelector("#enviar");
-// ENVIAR.addEventListener("click", function(e) {
-
-//     e.preventDefault();
-//     const EMAIL = document.querySelector("#floatingInput");
-//     const SENHA = document.querySelector("#floatingPassword");
-
-//     const valueEmail = EMAIL.value;
-//     const valueSenha = SENHA.value;
-
-//     console.log(valueEmail, valueSenha);
-
-// });
-
 const formulario = document.querySelector("#formulario");
 const btn = document.querySelector("#enviar");
 
@@ -69,4 +55,5 @@ btn.addEventListener("click", (validar) => {
         invalidSenha.style.display = 'flex';
     }
 
-});
+})
+
